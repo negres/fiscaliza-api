@@ -39,6 +39,12 @@ gem "bootsnap", require: false
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 gem "rack-cors"
 
+# autenticacao de login
+gem 'devise'
+
+# autenticacao de login
+gem 'devise-jwt'
+
 group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'factory_bot_rails'                           # Factories to generate models instances
