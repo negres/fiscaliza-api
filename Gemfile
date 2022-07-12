@@ -47,6 +47,21 @@ gem 'devise'
 # autenticacao de login
 gem 'devise-jwt'
 
+# Upload files from Ruby applications
+gem 'carrierwave', '2.2.0'
+
+# Use ActiveStorage variant
+gem 'mini_magick', '~> 4.8'
+
+# Pagination
+gem 'kaminari'
+
+# Complete Ruby geocoding solution
+gem 'geocoder'
+
+# Cloud services library
+gem 'fog'
+
 # Linter
 gem 'rubocop-rails', require: false
 
