@@ -1,24 +1,4 @@
-# README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# Fiscaliza - API
+### Com a API do Fiscaliza será possível o usuário criar ocorrências, como por exemplo: lixeira pública quebrada, falta de iluminação ou buraco na via. Essas ocorrências ficarão disponíveis para a prefeitura da respectiva cidade na qual a ocorrência foi aberta. O usuário também poderá acompanhar o andamento da sua solicitação.
+---
+### Em construção :construction:
