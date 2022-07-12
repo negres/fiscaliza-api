@@ -7,4 +7,5 @@ class User < ApplicationRecord
          :registerable,
          jwt_revocation_strategy: self
 
+  has_many :demands
 end

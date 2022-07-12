@@ -45,6 +45,21 @@ gem 'devise'
 # autenticacao de login
 gem 'devise-jwt'
 
+# Upload files from Ruby applications
+gem 'carrierwave', '2.2.0'
+
+# Use ActiveStorage variant
+gem 'mini_magick', '~> 4.8'
+
+# Pagination
+gem 'kaminari'
+
+# Complete Ruby geocoding solution
+gem 'geocoder'
+
+# Cloud services library
+gem 'fog'
+
 group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'factory_bot_rails'                           # Factories to generate models instances
