@@ -1,7 +1,9 @@
 class AddFieldsToUser < ActiveRecord::Migration[7.0]
   def change
-    add_column :users, :name, :string
-    add_column :users, :cpf, :string
-    add_column :users, :phone, :string
+    change_table :users, bulk: true do |t|
+      t.string :name
+      t.string :cpf
+      t.string :phone
+    end
   end
 end
