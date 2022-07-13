@@ -6,7 +6,7 @@ class DemandsController < ApplicationController
     @demand = Demand.new(
       demand_params.merge(
         status: :pending,
-        user: current_user,
+        user: current_user
       )
     )
 
@@ -20,18 +20,18 @@ class DemandsController < ApplicationController
   def index
     @demands = Demand.all.page(params[:page] || 1).per(10).order(id: :desc)
 
-    render status: :ok
+    render status: :ok, json: { demands: @demands }
   end
 
   def show
-    @demands = Demand.find(params[:id])
+    @demand = Demand.find(params[:id])
 
-    render status: :ok
+    render status: :ok, json: { demand: @demand }
   end
 
   private
 
   def demand_params
-    params.require(:demand).permit(:title, :description,:image, :latitude, :longitude)
+    params.require(:demand).permit(:title, :description, :image, :latitude, :longitude)
   end
 end
