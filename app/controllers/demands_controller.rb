@@ -6,7 +6,7 @@ class DemandsController < ApplicationController
     @demand = Demand.new(
       demand_params.merge(
         status: :pending,
-        user: current_user,
+        user: current_user
       )
     )
 
@@ -32,6 +32,6 @@ class DemandsController < ApplicationController
   private
 
   def demand_params
-    params.require(:demand).permit(:title, :description,:image, :latitude, :longitude)
+    params.require(:demand).permit(:title, :description, :image, :latitude, :longitude)
   end
 end
