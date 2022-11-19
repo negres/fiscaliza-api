@@ -13,8 +13,7 @@ class Demand < ApplicationRecord
   mount_uploader :image, ImageUploader
 
   def geocode
-    geocode_data = [latitude, longitude]
-    location = Geocoder.search(geocode_data).first
+    location = Geocoder.search([latitude, longitude]).first
 
     return if location.blank?
 

@@ -10,6 +10,6 @@ class UsersController < ApplicationController
   protected
 
   def configure_permitted_parameters
-    devise_parameter_sanitizer.permit(:sign_in, keys: i[:email, :login, :password])
+    devise_parameter_sanitizer.permit(:sign_in, keys: i[:email, :password])
   end
 end

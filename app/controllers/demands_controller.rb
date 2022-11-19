@@ -1,5 +1,5 @@
 class DemandsController < ApplicationController
-  before_action :authenticate_user!
+  before_action :authenticate_user!, except: %i[index show]
   respond_to :json
 
   def create
